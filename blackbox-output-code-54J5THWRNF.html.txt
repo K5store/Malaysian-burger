@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Daftar Menu Malaysian Burger</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: #a60f0f;
+            color: #ffd966;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: #7f0a0a;
+            text-align: center;
+            padding: 30px 10px;
+            font-size: 2.5em;
+            font-weight: 700;
+            letter-spacing: 2px;
+            border-bottom: 4px solid #ffc107;
+            position: relative;
+        }
+        header::after {
+            content: "MALAYSIAN BURGER";
+            display: block;
+            font-size: 1.1em;
+            letter-spacing: 3px;
+            margin-top: 5px;
+            color: #ffc107;
+            font-weight: 600;
+        }
+        main {
+            max-width: 900px;
+            margin: 30px auto;
+            background: #b83030;
+            padding: 20px 30px 40px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px #8b0000;
+        }
+        h2 {
+            font-size: 2em;
+            border-bottom: 3px solid #ffc107;
+            padding-bottom: 6px;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+        .menu-section {
+            margin-bottom: 30px;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        li {
+            font-size: 1.1em;
+            margin-bottom: 12px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 600;
+        }
+        li::before {
+            content: "🍔";
+            margin-right: 10px;
+            font-size: 1.3em;
+        }
+        .ayam li::before {
+            content: "🍗";
+        }
+        .harga {
+            font-weight: 700;
+            color: #fff176;
+        }
+        /* Burger images */
+        .images {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 25px;
+        }
+        .images img {
+            height: 120px;
+            border-radius: 15px;
+            box-shadow: 0 0 10px #660000;
+        }
+        footer {
+            text-align: center;
+            color: #ffeb3b;
+            margin: 40px 0 20px;
+            font-style: italic;
+        }
+        @media (max-width: 600px) {
+            main {
+                padding: 15px 20px 30px;
+            }
+            .images {
+                flex-direction: column;
+                gap: 20px;
+            }
+            .images img {
+                height: 100px;
+            }
+            li {
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>DAFTAR MENU</header>
+    <main>
+        <section class="menu-section ayam">
+            <h2>BURGER AYAM</h2>
+            <ul>
+                <li><span>Ayam Biasa</span><span class="harga">18K</span></li>
+                <li><span>Ayam Special</span><span class="harga">20K</span></li>
+                <li><span>Ayam Special Cheese</span><span class="harga">25K</span></li>
+                <li><span>Double Ayam</span><span class="harga">21K</span></li>
+                <li><span>Double Ayam Cheese</span><span class="harga">26K</span></li>
+                <li><span>Double Ayam Special Cheese</span><span class="harga">28K</span></li>
+            </ul>
+            <div class="images">
+                <img src="https://i.ibb.co/yVSX3xc/chicken-burger.png" alt="Burger Ayam" />
+                <img src="https://i.ibb.co/qMg2p0r/fries.png" alt="Kentang Goreng" />
+                <img src="https://i.ibb.co/hR5xxsw/cola.png" alt="Minuman" />
+            </div>
+        </section>
+
+        <section class="menu-section daging">
+            <h2>BURGER DAGING</h2>
+            <ul>
+                <li><span>Daging Biasa</span><span class="harga">19K</span></li>
+                <li><span>Daging Special</span><span class="harga">21K</span></li>
+                <li><span>Daging Special Cheese</span><span class="harga">26K</span></li>
+                <li><span>Double Daging</span><span class="harga">22K</span></li>
+                <li><span>Double Daging Cheese</span><span class="harga">27K</span></li>
+                <li><span>Double Daging Special</span><span class="harga">29K</span></li>
+            </ul>
+            <div class="images">
+                <img src="https://i.ibb.co/GVpGPLQ/beef-burger.png" alt="Burger Daging" />
+                <img src="https://i.ibb.co/qMg2p0r/fries.png" alt="Kentang Goreng" />
+                <img src="https://i.ibb.co/hR5xxsw/cola.png" alt="Minuman" />
+            </div>
+        </section>
+    </main>
+    <footer>
+        &copy; 2024 Malaysian Burger - All Rights Reserved
+    </footer>
+</body>
+</html>
